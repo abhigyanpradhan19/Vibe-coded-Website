@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caffè Alba — Italian Café on 5th Street, Los Santos</title>
+  <meta name="description" content="Caffè Alba is a family-run Italian bar at 148 5th Street, Los Santos. Espresso, cornetti baked at dawn, handmade pasta and sunset aperitivo since 1987." />
+  <meta name="theme-color" content="#F8F3EA" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='26' fill='%23C4402E'/%3E%3Ctext x='50' y='70' font-family='Georgia,serif' font-size='56' font-style='italic' fill='%23F1E4CB' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+  <script>
+    document.documentElement.classList.add("js");
+    /* If script.js never boots, drop the .js gate so nothing stays hidden. */
+    setTimeout(function () {
+      if (!window.__alba) document.documentElement.classList.remove("js");
+    }, 4000);
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20261008" />
+</head>
+<body>
+
+  <!-- Intro -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <span class="intro__mark">Caffè <em>Alba</em></span>
+    <span class="intro__bar"><i></i></span>
+    <span class="intro__sub">148 5th Street · Los Santos</span>
+  </div>
+
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- Floating background shapes -->
+  <div class="shapes" aria-hidden="true">
+    <span class="shape shape--a" data-speed="0.06"><i></i></span>
+    <span class="shape shape--b" data-speed="0.10"><i></i></span>
+    <span class="shape shape--c" data-speed="0.04"><i></i></span>
+    <span class="shape shape--d" data-speed="0.14"><i></i></span>
+    <span class="shape shape--e" data-speed="0.08"><i></i></span>
+    <span class="shape shape--f" data-speed="0.12"><i></i></span>
+    <span class="shape shape--g" data-speed="0.05"><i></i></span>
+    <span class="shape shape--h" data-speed="0.09"><i></i></span>
+    <span class="shape shape--i" data-speed="0.16"><i></i></span>
+    <span class="shape shape--j" data-speed="0.07"><i></i></span>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo" aria-label="Caffè Alba home">
+        <span class="logo__badge">A</span>
+        <span class="logo__text">Caffè<em>Alba</em></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#story" class="nav__link">Story</a>
+        <a href="#menu" class="nav__link">Menu</a>
+        <a href="#gallery" class="nav__link">Gallery</a>
+        <a href="#visit" class="nav__link">Visit</a>
+        <a href="#reserve" class="btn btn--sm btn--solid nav__cta">Reserve a table</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow reveal"><span class="dot"></span> 5th Street · Los Santos · dal 1987</p>
+
+          <h1 class="hero__title">
+            <span class="line"><span class="line__in" style="--d:.10s">A little Italy</span></span>
+            <span class="line"><span class="line__in" style="--d:.22s">on <em>5th</em> Street,</span></span>
+            <span class="line"><span class="line__in" style="--d:.34s">Los Santos.</span></span>
+          </h1>
+
+          <p class="hero__lede reveal" style="--d:.60s">
+            A family-run bar where the cornetti are folded at five, the espresso is pulled in
+            three seconds flat, and the terrazza catches the very last of the Vinewood light.
+          </p>
+
+          <div class="hero__actions reveal" style="--d:.72s">
+            <a href="#menu" class="btn btn--solid">See the menu <span class="btn__arrow" aria-hidden="true">→</span></a>
+            <a href="#reserve" class="btn btn--ghost">Reserve a table</a>
+          </div>
+
+          <ul class="hero__meta reveal" style="--d:.84s">
+            <li><strong>07:00 — 23:00</strong><span>Every day</span></li>
+            <li><strong>148 5th Street</strong><span>Downtown, Los Santos</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" id="heroVisual">
+          <span class="hero__arch" aria-hidden="true"></span>
+          <figure class="hero__frame">
+            <img src="assets/hero.jpg" width="1500" height="1028"
+                 alt="Sunlit Italian café interior with plants and pale wooden tables"
+                 fetchpriority="high" decoding="async" />
+          </figure>
+
+          <div class="chip chip--rating">
+            <span class="chip__stars" aria-hidden="true">★★★★★</span>
+            <strong>4.9 <span>/ 5</span></strong>
+            <em>3,412 Los Santos reviews</em>
+          </div>
+
+          <div class="chip chip--open">
+            <span class="pulse" aria-hidden="true"></span> Open now · kitchen till 22:00
+          </div>
+        </div>
+      </div>
+
+      <a href="#story" class="hero__scroll" aria-label="Scroll to our story">
+        <span>scroll</span><i aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Espresso</span><b>◆</b><span>Cornetti</span><b>◆</b><span>Pasta Fresca</span><b>◆</b>
+        <span>Aperitivo</span><b>◆</b><span>Gelato</span><b>◆</b><span>Focaccia</span><b>◆</b>
+        <span>Negroni</span><b>◆</b><span>Tiramisù</span><b>◆</b>
+        <span>Espresso</span><b>◆</b><span>Cornetti</span><b>◆</b><span>Pasta Fresca</span><b>◆</b>
+        <span>Aperitivo</span><b>◆</b><span>Gelato</span><b>◆</b><span>Focaccia</span><b>◆</b>
+        <span>Negroni</span><b>◆</b><span>Tiramisù</span><b>◆</b>
+      </div>
+    </div>
+
+    <!-- STORY -->
+    <section class="section story" id="story">
+      <div class="container story__grid">
+        <div class="story__media reveal">
+          <figure class="story__main">
+            <img src="assets/story-1.jpg" width="1100" height="616" loading="lazy" decoding="async"
+                 alt="Barista pouring steamed milk into a cup to form latte art" />
+          </figure>
+          <figure class="story__inset">
+            <img src="assets/story-2.jpg" width="900" height="720" loading="lazy" decoding="async"
+                 alt="Freshly baked croissants dusted with flour" />
+          </figure>
+          <span class="story__tag">dal 1987</span>
+        </div>
+
+        <div class="story__copy">
+          <p class="eyebrow reveal">La nostra storia</p>
+          <h2 class="section__title reveal" style="--d:.08s">Named after <em>Nonna Alba.</em></h2>
+          <p class="reveal" style="--d:.16s">
+            In 1987 Alba Ferrante crossed an ocean with one copper moka pot and a single rule
+            pinned to her apron: <strong>nobody drinks alone.</strong> Her grandchildren found a
+            sun-bleached corner of 5th Street, hung her portrait beside the till, and gave the
+            place her name.
+          </p>
+          <p class="reveal" style="--d:.24s">
+            Thirty-eight years later the rule still stands. Downtown lawyers share a table with
+            Vinewood dreamers, and the terrazza fills the moment the light turns gold.
+          </p>
+
+          <div class="stats reveal" style="--d:.32s">
+            <div class="stat"><strong><span data-count="38">0</span></strong><span>years on 5th</span></div>
+            <div class="stat"><strong><span data-count="31">0</span></strong><span>marble tables</span></div>
+            <div class="stat"><strong><span data-count="140">0</span>k</strong><span>espressos a year</span></div>
+          </div>
+
+          <blockquote class="pull reveal" style="--d:.40s">
+            “In Los Santos everybody is performing. Here, everybody is eating.”
+            <cite>— Alba Ferrante, 1931–2014</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section menu" id="menu">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow reveal">Il menu</p>
+            <h2 class="section__title reveal" style="--d:.08s">Short list, <em>long lunches.</em></h2>
+          </div>
+          <p class="section__note reveal" style="--d:.16s">
+            Everything is made in-house each morning. Oat &amp; almond milk +$0.50 —
+            and yes, cappuccino after 11am is allowed. We're in Los Santos.
+          </p>
+        </div>
+
+        <div class="tabs reveal" style="--d:.22s" role="tablist" aria-label="Menu categories">
+          <button class="tab is-active" id="tab-all" role="tab" aria-selected="true" aria-controls="menuList" data-filter="all">Everything</button>
+          <button class="tab" id="tab-coffee" role="tab" aria-selected="false" aria-controls="menuList" data-filter="coffee">Coffee</button>
+          <button class="tab" id="tab-panini" role="tab" aria-selected="false" aria-controls="menuList" data-filter="panini">Cornetti &amp; Panini</button>
+          <button class="tab" id="tab-pasta" role="tab" aria-selected="false" aria-controls="menuList" data-filter="pasta">Pasta &amp; Pizza</button>
+          <button class="tab" id="tab-dolci" role="tab" aria-selected="false" aria-controls="menuList" data-filter="dolci">Dolci</button>
+          <button class="tab" id="tab-aperitivo" role="tab" aria-selected="false" aria-controls="menuList" data-filter="aperitivo">Aperitivo</button>
+        </div>
+
+        <ul class="menu__list" id="menuList" role="tabpanel" aria-label="Menu items" tabindex="0">
+          <li class="menu__item" data-cat="coffee">
+            <div class="menu__row"><h3>Espresso Romano</h3><i class="leader"></i><b>$3.25</b></div>
+            <p>Double ristretto with a strip of lemon peel — the Roman way, non-negotiable.</p>
+            <span class="tag">house pour</span>
+          </li>
+          <li class="menu__item" data-cat="coffee">
+            <div class="menu__row"><h3>Cappuccino Alba</h3><i class="leader"></i><b>$4.50</b></div>
+            <p>Milk steamed to 62°, cocoa dusted. Ordered before 11am, <em>per la regola</em>.</p>
+          </li>
+          <li class="menu__item" data-cat="coffee">
+            <div class="menu__row"><h3>Shakerato</h3><i class="leader"></i><b>$6.00</b></div>
+            <p>Espresso shaken hard with cane sugar over hand-cut ice, orange zest on top.</p>
+            <span class="tag tag--alt">summer only</span>
+          </li>
+          <li class="menu__item" data-cat="coffee">
+            <div class="menu__row"><h3>Caffè Affogato</h3><i class="leader"></i><b>$6.50</b></div>
+            <p>Fior di latte gelato drowned in a hot ristretto. Dessert and coffee at once.</p>
+          </li>
+
+          <li class="menu__item" data-cat="panini">
+            <div class="menu__row"><h3>Cornetto Vuoto o Crema</h3><i class="leader"></i><b>$4.25</b></div>
+            <p>Laminated at four, baked at five, usually gone by ten. Plain, apricot or pistachio.</p>
+            <span class="tag">baked 05:00</span>
+          </li>
+          <li class="menu__item" data-cat="panini">
+            <div class="menu__row"><h3>Panino Cotto e Fontina</h3><i class="leader"></i><b>$11.50</b></div>
+            <p>Braised ham, fontina valley cheese, rocket, warm schiacciata pressed to order.</p>
+          </li>
+          <li class="menu__item" data-cat="panini">
+            <div class="menu__row"><h3>Focaccia Genovese</h3><i class="leader"></i><b>$8.00</b></div>
+            <p>Rosemary, flaky sea salt, first-press olive oil from Liguria.</p>
+          </li>
+
+          <li class="menu__item" data-cat="pasta">
+            <div class="menu__row"><h3>Tonnarelli Cacio e Pepe</h3><i class="leader"></i><b>$17.00</b></div>
+            <p>Hand-cut every morning, pecorino romano, toasted pepper. Three ingredients, no mercy.</p>
+            <span class="tag">chef's pride</span>
+          </li>
+          <li class="menu__item" data-cat="pasta">
+            <div class="menu__row"><h3>Rigatoni all'Amatriciana</h3><i class="leader"></i><b>$18.00</b></div>
+            <p>Guanciale, San Marzano tomatoes, chilli, a snowfall of pecorino.</p>
+          </li>
+          <li class="menu__item" data-cat="pasta">
+            <div class="menu__row"><h3>Margherita al Forno</h3><i class="leader"></i><b>$15.50</b></div>
+            <p>Wood-fired at 450° for ninety seconds. Fior di latte, basil, nothing else.</p>
+          </li>
+          <li class="menu__item" data-cat="pasta">
+            <div class="menu__row"><h3>Spaghetti alle Vongole</h3><i class="leader"></i><b>$19.50</b></div>
+            <p>Manila clams, white wine, garlic, parsley. Available after 18:00 only.</p>
+          </li>
+
+          <li class="menu__item" data-cat="dolci">
+            <div class="menu__row"><h3>Tiramisù della Casa</h3><i class="leader"></i><b>$8.00</b></div>
+            <p>Scooped, never sliced. Espresso-soaked savoiardi, marsala, cocoa.</p>
+          </li>
+          <li class="menu__item" data-cat="dolci">
+            <div class="menu__row"><h3>Cannolo Siciliano</h3><i class="leader"></i><b>$6.50</b></div>
+            <p>Filled to order — sheep's ricotta, candied orange, Bronte pistachio.</p>
+            <span class="tag">filled live</span>
+          </li>
+          <li class="menu__item" data-cat="dolci">
+            <div class="menu__row"><h3>Gelato al Pistacchio</h3><i class="leader"></i><b>$7.00</b></div>
+            <p>Churned daily downstairs. Ask for the dark chocolate shell dip.</p>
+          </li>
+
+          <li class="menu__item" data-cat="aperitivo">
+            <div class="menu__row"><h3>Spritz Alba</h3><i class="leader"></i><b>$11.00</b></div>
+            <p>Aperol, prosecco, blood orange, one green olive. Terrazza recommended.</p>
+            <span class="tag tag--alt">5–7pm $8</span>
+          </li>
+          <li class="menu__item" data-cat="aperitivo">
+            <div class="menu__row"><h3>Negroni Sbagliato</h3><i class="leader"></i><b>$12.00</b></div>
+            <p>Campari, sweet vermouth and prosecco — the mistake that became a classic.</p>
+          </li>
+          <li class="menu__item" data-cat="aperitivo">
+            <div class="menu__row"><h3>Chianti Classico</h3><i class="leader"></i><b>$10.00</b></div>
+            <p>Sangiovese from Radda, served a little cool with aged parmigiano.</p>
+          </li>
+        </ul>
+
+        <div class="feature reveal">
+          <figure class="feature__img">
+            <img src="assets/aperitivo.jpg" width="900" height="546" loading="lazy" decoding="async"
+                 alt="Three colourful aperitivo drinks lined up on a bar" />
+          </figure>
+          <div class="feature__body">
+            <p class="eyebrow">Aperitivo hour · ogni giorno</p>
+            <h3>Sunset costs fourteen dollars.</h3>
+            <p>
+              Any spritz with a focaccia board, every day from 17:00 to 19:00. Vinyl on Sundays,
+              a small DJ on Fridays, and the best light on 5th Street.
+            </p>
+            <a href="#reserve" class="btn btn--solid">Grab a sunset seat <span class="btn__arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE BAND -->
+    <section class="band">
+      <div class="band__inner">
+        <p class="band__eyebrow reveal">Una regola</p>
+        <blockquote class="band__quote reveal" style="--d:.10s">
+          “Coffee is only coffee<br />if you drink it <em>together.</em>”
+        </blockquote>
+        <p class="band__by reveal" style="--d:.20s">— the rule pinned to Nonna Alba's apron, 1987</p>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow reveal">Galleria</p>
+            <h2 class="section__title reveal" style="--d:.08s">One day on 5th Street</h2>
+          </div>
+          <p class="section__note reveal" style="--d:.16s">
+            From the 5am bake to the last glass on the terrazza — photographed as it happened.
+          </p>
+        </div>
+
+        <div class="masonry">
+          <figure class="shot reveal">
+            <img src="assets/g1.jpg" width="900" height="600" loading="lazy" decoding="async"
+                 alt="Three friends holding up cappuccinos together" />
+            <figcaption><b>07:10</b> The first pour</figcaption>
+          </figure>
+          <figure class="shot reveal" style="--d:.08s">
+            <img src="assets/g2.jpg" width="900" height="506" loading="lazy" decoding="async"
+                 alt="Assorted fresh breads, baguettes and pastries" />
+            <figcaption><b>05:00</b> The bake</figcaption>
+          </figure>
+          <figure class="shot reveal" style="--d:.16s">
+            <img src="assets/g3.jpg" width="900" height="900" loading="lazy" decoding="async"
+                 alt="Bowl of rigatoni in tomato sauce" />
+            <figcaption><b>12:30</b> Pranzo</figcaption>
+          </figure>
+          <figure class="shot reveal" style="--d:.06s">
+            <img src="assets/g4.jpg" width="900" height="600" loading="lazy" decoding="async"
+                 alt="Wood-fired pizza with tomatoes and herbs" />
+            <figcaption><b>19:00</b> Wood fire</figcaption>
+          </figure>
+          <figure class="shot reveal" style="--d:.14s">
+            <img src="assets/g5.jpg" width="900" height="1200" loading="lazy" decoding="async"
+                 alt="Slice of tiramisu dusted with cocoa on a plate" />
+            <figcaption><b>16:00</b> Dolci o'clock</figcaption>
+          </figure>
+          <figure class="shot reveal" style="--d:.22s">
+            <img src="assets/g6.jpg" width="900" height="600" loading="lazy" decoding="async"
+                 alt="Friends sharing plates and wine at a restaurant table" />
+            <figcaption><b>20:30</b> Aperitivo lungo</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOICES -->
+    <section class="section voices">
+      <div class="container voices__inner">
+        <p class="eyebrow reveal">Voci di Los Santos</p>
+
+        <div class="voices__stage reveal" style="--d:.10s">
+          <figure class="voice is-active">
+            <blockquote>“The espresso is genuinely better than anything I had in Rome, and I say that knowing how that sounds. I cross the whole city for it.”</blockquote>
+            <figcaption>Marcus O. · Downtown Los Santos</figcaption>
+          </figure>
+          <figure class="voice">
+            <blockquote>“We came for a cornetto at eight and left at closing. The terrazza, one Spritz Alba, that light on 5th Street — worth every minute.”</blockquote>
+            <figcaption>Sofia &amp; Jake · Vespucci Beach</figcaption>
+          </figure>
+          <figure class="voice">
+            <blockquote>“Carbonara that would make my nonna weep, and staff who remember my order before I reach the counter. This place is my living room.”</blockquote>
+            <figcaption>Alessia R. · Mirror Park</figcaption>
+          </figure>
+        </div>
+
+        <div class="voices__dots" id="voiceDots" role="group" aria-label="Choose a testimonial">
+          <button class="is-active" aria-label="Testimonial 1"></button>
+          <button aria-label="Testimonial 2"></button>
+          <button aria-label="Testimonial 3"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section class="section visit" id="visit">
+      <div class="container">
+        <div class="visit__grid">
+          <div class="visit__info">
+            <p class="eyebrow reveal">Visita</p>
+            <h2 class="section__title reveal" style="--d:.08s">Find us at <em>148 5th.</em></h2>
+
+            <ul class="facts">
+              <li class="reveal" style="--d:.16s">
+                <span>Address</span>
+                <strong>148 5th Street, Downtown<br />Los Santos, SA 90013</strong>
+              </li>
+              <li class="reveal" style="--d:.22s">
+                <span>Hours</span>
+                <strong>Mon — Sun · 07:00 – 23:00<br />Kitchen closes at 22:00</strong>
+              </li>
+              <li class="reveal" style="--d:.28s">
+                <span>Contact</span>
+                <strong>(323) 555-0148<br />ciao@caffealba.ls</strong>
+              </li>
+            </ul>
+
+            <div class="visit__actions reveal" style="--d:.34s">
+              <a href="tel:+13235550148" class="btn btn--solid">Call the bar</a>
+              <a href="https://maps.google.com/?q=5th+Street+Los+Angeles" target="_blank" rel="noopener" class="btn btn--ghost">Open in Maps</a>
+            </div>
+          </div>
+
+          <form class="reserve reveal" id="reserve" style="--d:.20s" novalidate>
+            <h3>Prenota un tavolo</h3>
+            <p class="reserve__sub">Tables are held for 15 minutes. Terrazza seats go first.</p>
+
+            <label class="field">
+              <span>Name</span>
+              <input required name="name" type="text" placeholder="Ava Ferrante" autocomplete="name" />
+            </label>
+
+            <div class="field-row">
+              <label class="field">
+                <span>Guests</span>
+                <select name="guests">
+                  <option>1</option><option selected>2</option><option>3</option>
+                  <option>4</option><option>5</option><option>6+</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Date</span>
+                <input required name="date" type="date" />
+              </label>
+              <label class="field">
+                <span>Time</span>
+                <select name="time">
+                  <option>08:00</option><option>12:30</option><option selected>18:30</option>
+                  <option>20:00</option><option>21:30</option>
+                </select>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn--solid btn--block">Confirm booking <span class="btn__arrow" aria-hidden="true">→</span></button>
+            <p class="reserve__msg" id="reserveMsg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div class="map reveal" role="img" aria-label="Stylised map showing Caffè Alba on 5th Street, Los Santos">
+          <svg viewBox="0 0 900 420" preserveAspectRatio="xMidYMid slice">
+            <rect width="900" height="420" fill="#E5DAC6" />
+            <g fill="#DCCEB4">
+              <rect x="24" y="26" width="150" height="98" rx="10" />
+              <rect x="240" y="26" width="240" height="98" rx="10" />
+              <rect x="546" y="26" width="180" height="98" rx="10" />
+              <rect x="774" y="26" width="110" height="98" rx="10" />
+              <rect x="24" y="196" width="150" height="120" rx="10" />
+              <rect x="774" y="196" width="110" height="120" rx="10" />
+              <rect x="24" y="352" width="200" height="52" rx="10" />
+              <rect x="300" y="352" width="300" height="52" rx="10" />
+              <rect x="668" y="352" width="216" height="52" rx="10" />
+            </g>
+
+            <g stroke="#F8F3EA" stroke-width="34" stroke-linecap="square" fill="none">
+              <path d="M-10 161 H910" />
+              <path d="M-10 340 H910" />
+              <path d="M205 -10 V430" />
+              <path d="M515 -10 V430" />
+              <path d="M745 -10 V430" />
+              <path d="M-10 430 L360 -10" />
+            </g>
+
+            <g stroke="#C9B795" stroke-width="2" stroke-dasharray="14 16" fill="none">
+              <path d="M-10 161 H910" />
+              <path d="M205 -10 V430" />
+            </g>
+
+            <g class="map__car">
+              <rect x="0" y="152" width="42" height="18" rx="7" fill="#C4402E" />
+              <rect x="10" y="147" width="20" height="8" rx="3" fill="#F8F3EA" opacity=".85" />
+            </g>
+
+            <g class="map__pin">
+              <circle cx="352" cy="161" r="54" fill="#C4402E" opacity=".16" />
+              <circle cx="352" cy="161" r="27" fill="#C4402E" />
+              <circle cx="352" cy="161" r="9" fill="#F8F3EA" />
+            </g>
+
+            <g font-family="Jost, sans-serif" fill="#6B6154" font-size="14" letter-spacing="4">
+              <text x="560" y="152">5TH STREET</text>
+              <text x="46" y="332">BROADWAY</text>
+              <text x="620" y="405">OLVERA</text>
+              <text x="600" y="336" transform="rotate(-28 600 336)">VINWOOD BLVD</text>
+            </g>
+
+            <g font-family="Jost, sans-serif">
+              <text x="352" y="234" text-anchor="middle" font-size="19" font-weight="600" fill="#3B2D20">Caffè Alba</text>
+              <text x="352" y="256" text-anchor="middle" font-size="13" fill="#6B6154">148 5th St · Downtown LS</text>
+            </g>
+          </svg>
+          <div class="map__legend">
+            <span><i class="pulse"></i> 3 min from Pershing Square</span>
+            <span>Street parking on Broadway</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <a href="#top" class="logo logo--light" aria-label="Back to top">
+        <span class="logo__badge">A</span>
+        <span class="logo__text">Caffè<em>Alba</em></span>
+      </a>
+
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#story">Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit</a>
+        <a href="#reserve">Reserve</a>
+      </nav>
+
+      <p class="footer__addr">148 5th Street, Los Santos<br />(323) 555-0148</p>
+    </div>
+    <div class="container footer__base">
+      <p>© <span id="year">2026</span> Caffè Alba. A fictional café on a fictional street.</p>
+      <p class="footer__sign"><em>Fatto con amore su 5th Street.</em></p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js?v=20261008"></script>
+</body>
+</html>
